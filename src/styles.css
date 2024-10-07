@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Prevent font size inflation */
@@ -72,7 +74,45 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
-
+:root{
+    --primary-color: #166534;
+    --border-color: #365a3b;
+}
 body{
-    background-color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem;
+    justify-content: center;
+}
+.header-wrapper p{
+    max-width: 300px;
+    text-align: center;
+}
+.header-wrapper h1{
+    text-align: center;
+}
+.header-wrapper img{
+    max-height: 300px;
+    max-width: 300px;
+}
+.project img{
+    width: 300px;
+    height: 300px;
+}
+.project.three img{
+    object-fit: cover;
+}
+.project{
+    display:flex;
+    gap: 3rem;
+    margin: 5rem 5rem;
+}
+.project.left {
+    justify-content: flex-start;
+}
+.project.right{
+    justify-content: flex-end;
 }
