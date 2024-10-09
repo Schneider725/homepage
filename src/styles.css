@@ -161,11 +161,11 @@ footer{
     }
     .project{
         margin: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         display: flex;
     }
     .project img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: auto;
     }
 }
